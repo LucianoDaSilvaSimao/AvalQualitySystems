@@ -1,20 +1,49 @@
 ﻿
-@{ 
+
+@{
 
     Layout = null;
 
 }
 
-<h5>
+<head>
 
-    Luciano Teste
+</head>
 
-</h5>
-
-
-<div>
-
-    <a href="/api/getcontapag/" target="_blank">Contas Pagas</a>
+<body>
 
 
-</div>
+    <h5>
+
+        Luciano Teste
+
+    </h5>
+
+
+    <div>
+
+        <h5>Exemplo POST  </h5>
+
+        <form id="form1" method="post" enctype="Application/x-www-form-urlencoded" action="/api/getcontapag/">
+            <div>
+                <input type="submit" value="Buscar Post" />
+            </div>
+        </form>
+
+        <hr />
+
+        <h5>Exemplo GET  </h5>
+
+        <form id="form2" method="get" target="_blank" action="/api/getcontapagDetails/">
+            <div>
+                <input type="submit" value="Buscar Get" />
+            </div>
+        </form>      
+
+    </div>
+
+
+</body>
+
+
+

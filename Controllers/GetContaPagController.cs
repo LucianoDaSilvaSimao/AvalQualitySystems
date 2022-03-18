@@ -15,15 +15,15 @@ namespace Prova.Controllers
 
         [
            Route(""),
-           HttpGet
-       ]
-        public ActionResult<dynamic> Index()
+           HttpPost
+       ]       
+        public ActionResult<dynamic> index()
         {
 
             try
-            {
+            {               
 
-                int EmpresaId = 1;
+                int EmpresaId = 1; // wEmpresaId ?? 0;
 
                 //recebe o POst do HTML
                 //var body = await this.GetBody<Data.ContaPagamento>();
@@ -66,7 +66,6 @@ namespace Prova.Controllers
             {
                 return BadRequest(UtilsGestao.UtilsApi.CatchError(ex));
             }
-
 
         }
 
